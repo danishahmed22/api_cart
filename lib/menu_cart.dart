@@ -57,7 +57,7 @@ class MenuCard extends StatefulWidget {
 
 class _MenuCardState extends State<MenuCard> {
   int quantity = 1;
-  double totalPrice = 0.0;
+  int totalPrice = 0;
 
   @override
   void initState() {
@@ -122,7 +122,6 @@ class _MenuCardState extends State<MenuCard> {
                     Row(
                       children: [
                         Text('Price: '),
-                        Text('\$${widget.item['original_price']} ', style: TextStyle(decoration: TextDecoration.lineThrough)),
                         Text('\$${widget.item['discounted_price']}'),
                       ],
                     ),
